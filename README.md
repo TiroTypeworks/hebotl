@@ -1,4 +1,8 @@
 # hebotl
 Biblical Hebrew OpenType Layout model
 
-This repo contains a single source file in Microsoft VOLT .vtp project format. This file contains all the VOLT-specific source data for the SBL Hebrew 
+This repo contains a single source file in Microsoft’s [Visual OpenType Layout Tool](https://docs.microsoft.com/en-us/typography/tools/volt/) (VOLT) .vtp project format. This file contains all the VOLT-specific source data for version 1.57 of the [SBL Hebrew](https://www.sbl-site.org/educational/BiblicalFonts_SBLHebrew.aspx) font. The .vtp format is a plain text representation of the VOLT project which can be imported into VOLT when SBL Hebrew or a font using the same or similar glyph set and, importantly, glyph names is loaded. Note that the MIT license under which this .vtp file is here made available applies *only* to the OpenType Layout model for Biblical Hebrew as represented in the VOLT project and *not* to the SBL Hebrew font or to any other font that might make use of this model except as clearly stated in the license for such fonts.
+
+This OTL model for Biblical Hebrew was jointly developed by Ralph Hancock and John Hudson. It makes use of contextual GPOS positioning to handle combinations of nikudot (vowels) and teamim (cantillation) marks, along with contextual insertion of slim spacing units to avoid collisions between marks on adjacent letters. [This model favours the kinds of Hebrew fonts used in non-Jewish Biblical scholarship, which tend to use larger marks than those found in e.g. Jewish prayerbooks that require fewer contextual adjustments to mark positions or spacing.]
+
+The .vtp file can be used as a reference to understand the layout model, or more directly applied to a font with the caveat that specific spacing and positioning adjustments will almost certainly need to be edited for best results in a design other than SBL Hebrew.
